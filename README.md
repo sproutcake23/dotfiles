@@ -1,3 +1,3 @@
-# Dotfiles Repository
+# Dotfiles
 
-This repository contains the dotfiles I use to configure my Windows system. 
+Personal configuration files for my Fedora Linux environment.

@@ -3,34 +3,21 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
 config.window_frame = {
-	font = wezterm.font({ family = "CaskaydiaCove NFM", weight = "Bold" }),
-
+	font = wezterm.font({ family = "CaskaydiaCove Nerd Font Mono", weight = "Bold" }),
 	font_size = 8,
-
-	active_titlebar_bg = "#333333",
-
-	inactive_titlebar_bg = "#333333",
 }
 
-config.colors = {
-	tab_bar = {
-		inactive_tab_edge = "#575757",
-	},
-}
 -- Font settings
-config.font = wezterm.font("CaskaydiaCove NFM", { weight = "Medium" })
-config.font_size = 18
+config.font = wezterm.font("CaskaydiaCove Nerd Font Mono", { weight = "Regular" })
+config.font_size = 16
 config.line_height = 0.8
 
 -- Colors
-config.color_scheme = "Nocturnal Winter"
+config.color_scheme = "Kibble"
 config.default_cursor_style = "SteadyUnderline"
 
-config.window_background_opacity = 0.6
-config.win32_system_backdrop = "Acrylic"
-
 -- Appearance
-config.window_decorations = "RESIZE"
+config.window_decorations = "NONE"
 config.hide_tab_bar_if_only_one_tab = true
 config.window_padding = {
 	left = 0,
@@ -39,7 +26,8 @@ config.window_padding = {
 	bottom = 0,
 }
 
-config.default_prog = { "pwsh.exe" }
+config.default_prog = { "zsh" }
+
 config.max_fps = 144
 
 return config
