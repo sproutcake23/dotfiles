@@ -26,6 +26,8 @@ alias mt='btop'
 alias cls='clear'
 alias jl='jupyter lab'
 alias se='dolphin . &'
+alias wpe='warp-cli connect'
+alias wpd='warp-cli disconnect'
 
 # Load Powerlevel10k configuration file (created by `p10k configure`)
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
