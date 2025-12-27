@@ -29,5 +29,20 @@ alias se='dolphin . &'
 alias wpe='warp-cli connect'
 alias wpd='warp-cli disconnect'
 
+
+rj() {
+  if [[ -z "$1" ]]; then
+    echo "provide some filename bruh"
+    return 1
+  fi
+  javac "$1.java"
+
+  if [[ $? -eq 0 ]]; then
+    java "$1"
+  else
+    echo "compilation failed bruh"
+  fi
+}
+
 # Load Powerlevel10k configuration file (created by `p10k configure`)
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
